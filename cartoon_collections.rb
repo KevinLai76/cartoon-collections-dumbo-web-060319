@@ -14,9 +14,7 @@ end
 def find_the_cheese(array)
   cheese_types = ["cheddar", "gouda", "camembert"]
   cheese_types.each do |cheese| 
-    array.find do |maybe_cheese|
-      cheese == maybe_cheese
-    end
+    array.find { |maybe_cheese| return cheese == maybe_cheese }
   end
   
   # return nil
