@@ -21,3 +21,11 @@ def find_the_cheese(array)
   
   return nil
 end
+
+def find_the_cheese(array)
+  cheeses = [gouda cheddar camembert]
+
+  array.find do |maybe_cheese|
+    cheeses.include?(maybe_cheese)
+  end
+end
